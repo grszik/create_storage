@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_snt:donut_pan"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "create_snt:filled_donut_pan"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_snt:incomplete_donut"
+        },
+        {
+          "item": "create:wheat_flour"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_snt:incomplete_donut"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_snt:incomplete_donut"
+        },
+        {
+          "amount": 500,
+          "fluid": "minecraft:water",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_snt:incomplete_donut"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_snt:incomplete_donut"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create_snt:pink_rock_candy"
+    },
+    {
+      "item": "create_snt:pink_rock_candy"
+    },
+    {
+      "item": "create_snt:pink_rock_candy"
+    },
+    {
+      "item": "create_snt:pink_rock_candy"
+    }
+  ],
+  "result": {
+    "item": "create_snt:pink_rock_candy_block"
+  }
+}

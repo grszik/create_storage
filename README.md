@@ -1,4 +1,4 @@
-# Create: Sweets & Treats (_Expanded_)
+# Create: Sweets & Treats (_Extra_)
 
 An extension for Create: Sweets & Treats, adding extra stuff.
 

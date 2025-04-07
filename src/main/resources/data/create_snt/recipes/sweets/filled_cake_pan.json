@@ -1,11 +1,13 @@
 {
-  "type": "create:deploying",
+  "type": "create:filling",
   "ingredients": [
     {
       "item": "create_snt:cake_pan"
     },
     {
-      "item": "create:dough"
+      "amount": 500,
+      "fluid": "create_snt_extra:cake_batter",
+      "nbt": {}
     }
   ],
   "results": [

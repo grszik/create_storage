@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Blocks {
-    public static final BlockSetType chocolate = new BlockSetType("chocolate");
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreateSNTE.MODID);
     public static List<RegistryObject<Item>> BLOCK_ITEMS = new ArrayList<>();
 

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "create_snt_extra:filled_waffle_pan"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "create_snt_extra:waffle"
+    },
+    {
+      "count": 1,
+      "item": "create_snt_extra:waffle_pan"
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 {
-  "item.create_snt_extra.ice_cream": "Ice Cream",
-  "item.create_snt_extra.creative_donut": "Creative Donut",
+  "item.create_snt_extra.ice_cream": "Lody",
+  "item.create_snt_extra.creative_donut": "Kreatywny Donut",
+  "item.create_snt_extra.ice_cream_top": "Gałki Lodów",
+  "item.create_snt_extra.ice_cream_cone": "Wafelek od Lodów",
+
+  "item.create_snt_extra.cake_batter_bucket": "Wiadro Ciasta",
+  "fluid_type.create_snt_extra.cake_batter": "Ciasto",
 
   "itemGroup.create_snt_extra.creativetab": "Create: S&T Extra",
 

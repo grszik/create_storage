@@ -24,17 +24,17 @@ public class FoodEvent {
     public static List<Player> saturated = new ArrayList<>();
 
     @SubscribeEvent
-    public static void onFoodEaten(LivingEntityUseItemEvent.Finish event) {
+    public static void itemUsed(LivingEntityUseItemEvent.Stop event) {
         LivingEntity entity = event.getEntity();
         ItemStack item = event.getItem();
 
         if (entity instanceof Player player && item.getItem() == Items.CREATIVE_DONUT.get()) {
-            LogManager.getLogger().debug("Player hunger: {}", player.getFoodData().getFoodLevel());
+            LogManager.getLogger().warn("Player hunger: {}", player.getFoodData().getFoodLevel());
             if(saturated.contains(player)) {
-                LogManager.getLogger().debug("Turned off");
+                LogManager.getLogger().warn("Turned off");
                 saturated.remove(player);
             } else {
-                LogManager.getLogger().debug("Turned on");
+                LogManager.getLogger().warn("Turned on");
                 saturated.add(player);
             }
         }
@@ -44,9 +44,8 @@ public class FoodEvent {
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         if (event.phase == TickEvent.Phase.END) {
             Player player = event.player;
-            if(!saturated.contains(player)) return;
-            int currentHunger = player.getFoodData().getFoodLevel();
-            if(currentHunger < 20) {
+            LogManager.getLogger().warn("tick {}, {}", saturated.contains(player) ? "yes" : "no", player.getFoodData().getFoodLevel());
+            if(saturated.contains(player) && player.getFoodData().getFoodLevel() < 20) {
                 player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 20, 255, true, true));
             }
         }

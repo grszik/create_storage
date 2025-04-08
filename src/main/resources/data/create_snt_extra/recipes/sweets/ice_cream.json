@@ -10,6 +10,7 @@
   ],
   "results": [
     {
+      "chance": 0.75,
       "item": "create_snt_extra:ice_cream"
     }
   ]

@@ -18,8 +18,8 @@ public class Items {
     public static final RegistryObject<Item> ICE_CREAM = registerItem("ice_cream", new Item.Properties()
             .stacksTo(16)
             .food(new FoodProperties.Builder()
-                    .nutrition(3)
-                    .saturationMod(0.2f)
+                    .nutrition(6)
+                    .saturationMod(0.33f)
                     .build())
             .rarity(Rarity.COMMON));
     public static final RegistryObject<Item> ICE_CREAM_TOP = registerItem("ice_cream_top", new Item.Properties()
@@ -27,13 +27,23 @@ public class Items {
             .rarity(Rarity.COMMON));
     public static final RegistryObject<Item> ICE_CONE = registerItem("ice_cone", new Item.Properties()
             .stacksTo(16)
+            .food(new FoodProperties.Builder()
+                    .nutrition(1)
+                    .saturationMod(1f)
+                    .build())
+            .rarity(Rarity.COMMON));
+
+    public static final RegistryObject<Item> ICE_CONE_PAN = registerItem("ice_cone_pan", new Item.Properties()
+            .stacksTo(16)
+            .rarity(Rarity.COMMON));
+    public static final RegistryObject<Item> FILLED_ICE_CONE_PAN = registerItem("filled_ice_cone_pan", new Item.Properties()
+            .stacksTo(1)
             .rarity(Rarity.COMMON));
 
     public static final RegistryObject<Item> CREATIVE_DONUT = registerItem("creative_donut", new Item.Properties()
             .stacksTo(1)
             .food(new FoodProperties.Builder()
-                    .nutrition(3)
-                    .saturationMod(0.2f)
+                    .alwaysEat()
                     .build())
             .rarity(Rarity.COMMON));
 

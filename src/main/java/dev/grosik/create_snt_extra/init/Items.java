@@ -19,7 +19,7 @@ public class Items {
             .stacksTo(16)
             .food(new FoodProperties.Builder()
                     .nutrition(6)
-                    .saturationMod(0.33f)
+                    .saturationMod(0.4f)
                     .build())
             .rarity(Rarity.COMMON));
     public static final RegistryObject<Item> ICE_CREAM_TOP = registerItem("ice_cream_top", new Item.Properties()

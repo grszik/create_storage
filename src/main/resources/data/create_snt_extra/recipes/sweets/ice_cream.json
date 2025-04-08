@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_snt_extra:ice_cream_top"
+    },
+    {
+      "item": "create_snt_extra:ice_cone"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_snt_extra:ice_cream"
+    }
+  ]
+}

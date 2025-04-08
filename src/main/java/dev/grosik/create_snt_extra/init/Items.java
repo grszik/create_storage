@@ -22,8 +22,15 @@ public class Items {
                     .saturationMod(0.2f)
                     .build())
             .rarity(Rarity.COMMON));
-    public static final RegistryObject<Item> CREATIVE_DONUT = registerItem("creative_donut", new Item.Properties()
+    public static final RegistryObject<Item> ICE_CREAM_TOP = registerItem("ice_cream_top", new Item.Properties()
             .stacksTo(16)
+            .rarity(Rarity.COMMON));
+    public static final RegistryObject<Item> ICE_CONE = registerItem("ice_cone", new Item.Properties()
+            .stacksTo(16)
+            .rarity(Rarity.COMMON));
+
+    public static final RegistryObject<Item> CREATIVE_DONUT = registerItem("creative_donut", new Item.Properties()
+            .stacksTo(1)
             .food(new FoodProperties.Builder()
                     .nutrition(3)
                     .saturationMod(0.2f)

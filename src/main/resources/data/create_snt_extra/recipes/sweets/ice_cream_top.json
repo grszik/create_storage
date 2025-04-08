@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "create:bar_of_chocolate"
+    }
+  ],
+  "result": {
+    "item": "create_snt_extra:ice_cream_top",
+    "count": 3
+  }
+}

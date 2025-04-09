@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "create_snt_extra:item/pans/filled_ice_cone"
-  }
-}

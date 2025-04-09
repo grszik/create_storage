@@ -1,5 +1,6 @@
 package dev.grosik.create_storage.storagecable;
 
+import dev.grosik.create_storage.CreateStorage;
 import dev.grosik.create_storage.init.BlockEntityTypes;
 import dev.grosik.create_storage.init.Blocks;
 import dev.grosik.create_storage.networkunit.NetworkUnitBlockEntity;
@@ -10,12 +11,14 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import org.apache.commons.lang3.ObjectUtils;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
+import java.util.logging.Logger;
 
 public class StorageCableBlockEntity extends BlockEntity {
 
@@ -35,6 +38,7 @@ public class StorageCableBlockEntity extends BlockEntity {
     public void setNetwork(NetworkUnitBlockEntity nu) {
         if(!nu.isActive()) return;
         network = nu.getBlockPos();
+        Logger.getLogger(CreateStorage.MODID).warning("Network at %d/%d/%d works: %s".formatted(network.getX(), network.getY(), network.getZ(), (nu.getCapability(ForgeCapabilities.ITEM_HANDLER) == null ? "y" : "n").toString()));
     }
 
     public BlockPos getNetwork() {

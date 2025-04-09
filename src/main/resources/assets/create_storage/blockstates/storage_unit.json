@@ -1,10 +1,5 @@
 {
   "variants": {
-    "facing=north": { "model": "create_storage:block/network_unit", "x": 270, "y": 180 },
-    "facing=east": { "model": "create_storage:block/network_unit", "x": 270, "y": 270 },
-    "facing=south": { "model": "create_storage:block/network_unit", "x": 270, "y": 0 },
-    "facing=west": { "model": "create_storage:block/network_unit", "x": 270, "y": 90 },
-    "facing=up": { "model": "create_storage:block/network_unit", "x": 0, "y": 0 },
-    "facing=down": { "model": "create_storage:block/network_unit", "x": 360 }
+    "": { "model": "create:block/andesite_casing" }
   }
 }
